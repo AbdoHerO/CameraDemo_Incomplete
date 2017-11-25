@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/layout">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/layouttop"
+            android:layout_alignParentTop="true"
+            android:background="#000">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/flash"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/flash"
+                android:padding="5dp"
+                />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/switsh"
+                android:layout_alignParentRight="true"
+                android:id="@+id/switchcamera"
+                android:padding="5dp"
+                />
+        </RelativeLayout>
+        <SurfaceView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/surfaceview"
+            android:layout_above="@+id/layouttop"
+            android:layout_below="@+id/layoutbot"
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/layoutbot"
+            android:layout_alignParentBottom="true"
+            android:background="#000">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="5dp"
+                android:id="@+id/removeimage"
+                android:src="@drawable/remove"
+                android:padding="5dp"
+                />
+            <com.melnykov.fab.FloatingActionButton
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/capture"
+                android:id="@+id/cameracapture"/>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/gallery"
+                android:layout_centerVertical="true"
+                android:layout_margin="5dp"
+                android:layout_alignParentRight="true"
+                android:id="@+id/gallery"
+                android:padding="5dp"
+                />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>
